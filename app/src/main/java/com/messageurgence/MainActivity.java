@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    /**
+    /**1
      * Initialisation du bluetooth
      *
      * @return Retourne une boolean égale a true si la l'appairage a été fait sans erreurs, false sinon
