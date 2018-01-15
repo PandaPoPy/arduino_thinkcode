@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fond"
+    android:orientation="vertical"
+    tools:context="com.messageurgence.MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="587dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="19dp"
+            android:fontFamily="casual"
+            android:text="@string/accueil"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.401"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.032" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="18.74"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="19dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"></LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.01"
+                    android:text="@string/emplacement_g_ographique"
+                    android:textColor="@android:color/background_dark" />
+
+                <LinearLayout
+                    android:layout_width="19dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"></LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="18dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"></LinearLayout>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.26"
+                android:text="@string/num_ro_joindre"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/_0123456789"
+                android:textColor="@android:color/background_dark" />
+
+            <LinearLayout
+                android:layout_width="17dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"></LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <LinearLayout
+                android:layout_width="19dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"></LinearLayout>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:background="@drawable/selector_button"
+                android:onClick="changeVueVersNumero"
+                android:shadowColor="#FAFCFF"
+                android:shadowDx="0"
+                android:shadowDy="0"
+
+                android:shadowRadius="11"
+                android:text="@string/changer_le_num_r1"
+                android:textColor="#000000"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="245dp" />
+
+            <LinearLayout
+                android:layout_width="19dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"></LinearLayout>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_button"
+                android:onClick="quitterAppli"
+
+                android:shadowColor="#FAFCFF"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="11"
+                android:text="@string/quitter" />
+
+            <LinearLayout
+                android:layout_width="19dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"></LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <LinearLayout
+                android:layout_width="19dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"></LinearLayout>
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_button"
+                android:onClick="connectionBlue"
+
+                android:shadowColor="#FAFCFF"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="11"
+                android:text="@string/connection_la_t_l_commande" />
+
+            <LinearLayout
+                android:layout_width="19dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"></LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

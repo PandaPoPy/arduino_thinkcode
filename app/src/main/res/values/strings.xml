@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Message Urgence</string>
+    <string name="changer_le_num_ro">changer le numéro</string>
+    <string name="nouveau_num_ro">nouveau numéro :</string>
+    <string name="_0611223344">0611223344</string>
+    <string name="valider">valider</string>
+    <string name="retour">Retour</string>
+    <string name="accueil">Accueil</string>
+    <string name="emplacement_g_ographique">activez le GPS de votre appareil</string>
+    <string name="num_ro_joindre">Numéro à joindre :</string>
+    <string name="_0123456789">0123456789</string>
+    <string name="changer_le_num_r1">changer le numéro</string>
+    <string name="quitter">Quitter</string>
+    <string name="connection_la_t_l_commande">connection à la télécommande</string>
+</resources>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fond"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="48dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="19dp"
+            android:fontFamily="casual"
+            android:text="@string/changer_le_num_ro"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="-15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:orientation="vertical"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="86dp">
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.52"
+            android:orientation="vertical"></LinearLayout>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nouveau_num_ro"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/_0611223344"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.54"
+            android:orientation="vertical"></LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"></LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="19dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"></LinearLayout>
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:background="@drawable/selector_button"
+            android:onClick="enregNumero"
+            android:shadowColor="#FAFCFF"
+            android:shadowDx="0"
+            android:shadowDy="0"
+
+            android:shadowRadius="11"
+            android:text="@string/valider"
+            android:textColor="#000000"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="245dp" />
+
+        <LinearLayout
+            android:layout_width="19dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"></LinearLayout>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_button"
+            android:onClick="retourAccueil"
+
+            android:shadowColor="#FAFCFF"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="11"
+            android:text="@string/retour" />
+
+        <LinearLayout
+            android:layout_width="19dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"></LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
