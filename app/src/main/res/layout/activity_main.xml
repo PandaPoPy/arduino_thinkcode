@@ -45,13 +45,15 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="34dp"
-            android:orientation="vertical"></LinearLayout>
+            android:layout_height="24dp"
+            android:orientation="vertical"
+            android:layout_weight="0.08"></LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_weight="0.14">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -71,7 +73,9 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1.01"
                     android:text="@string/emplacement_g_ographique"
-                    android:textColor="@android:color/background_dark" />
+                    android:textAlignment="textStart"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18sp" />
 
                 <LinearLayout
                     android:layout_width="19dp"
@@ -97,7 +101,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0.26"
                 android:text="@string/num_ro_joindre"
-                android:textColor="@color/colorPrimaryDark" />
+                android:textAlignment="textStart"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/textView2"
@@ -105,7 +111,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/_0123456789"
-                android:textColor="@android:color/background_dark" />
+                android:textAlignment="textStart"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp" />
 
             <LinearLayout
                 android:layout_width="17dp"

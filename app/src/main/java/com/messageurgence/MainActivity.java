@@ -8,6 +8,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
+import android.location.Address;
+import android.location.Geocoder;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
@@ -15,6 +17,7 @@ import android.os.Handler;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.telephony.SmsManager;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -22,6 +25,10 @@ import android.widget.Toast;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Locale;
 import java.util.Objects;
 import java.util.Set;
 import java.util.UUID;
@@ -219,7 +226,7 @@ public class MainActivity extends AppCompatActivity {
         final TextView message = (TextView) findViewById(R.id.textView8);
 
         String num = numero.getText().toString();
-        String msg = "J'ai besoin d'aide, je suis approximativement à cette position GPS : " + message.getText().toString();
+        String msg = "J'ai besoin d'aide, je suis approximativement ici :\n" + message.getText().toString();
 
         SmsManager.getDefault().sendTextMessage(num, null, msg, null, null);
     }
@@ -247,6 +254,25 @@ public class MainActivity extends AppCompatActivity {
             String msg = "Latitude: " + latitude + "\nLongitude: " + longitude;
             TextView affichagePos = (TextView) findViewById(R.id.textView8);
             affichagePos.setText(msg);
+
+            Geocoder geocoder = new Geocoder(getApplicationContext(), Locale.getDefault());
+
+            List<Address> addresses  = null;
+            try {
+                addresses = geocoder.getFromLocation(latitude,longitude, 1);
+
+                String numRue = addresses.get(0).getSubThoroughfare();
+                String rue = addresses.get(0).getThoroughfare();
+                String codePos = addresses.get(0).getPostalCode();
+                String ville = addresses.get(0).getLocality();
+
+                msg = numRue + " " +rue + " " + codePos + " " + ville;
+                affichagePos.setText(msg);
+            } catch (IOException e) {
+                affichagePos.setText(msg);
+            }
+
+
         }
 
         @Override
